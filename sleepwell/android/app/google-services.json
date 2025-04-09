@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "727606216716",
+    "project_id": "sleepwell-43645",
+    "storage_bucket": "sleepwell-43645.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:727606216716:android:3598fdacad4360af1f4629",
+        "android_client_info": {
+          "package_name": "com.example.sleepwell"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPahO_iGHDGuDlj2Bb09zFB0XgLWfM55g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
