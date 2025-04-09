@@ -26,7 +26,8 @@ class ApiService {
         return UserMdel.fromJson(data['user']);
       } else {
         debugPrint(data['message']);
-        throw Exception(data['message']);
+                return null;
+
       }
     } else {
       throw Exception('Failed to login');
