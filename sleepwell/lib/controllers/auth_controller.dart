@@ -103,9 +103,13 @@ class AuthController extends GetxController {
         passwordController.clear();
       } else {
         _showToast('Invalid email or password', isSuccess: false);
+                return;
+
       }
     } catch (e) {
       _showToast(e.toString(), isSuccess: false);
+              return;
+
     } finally {
       isLoading = false;
       update();
