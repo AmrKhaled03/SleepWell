@@ -18,7 +18,7 @@ class MemberDetails extends GetWidget {
         automaticallyImplyLeading: false,
         backgroundColor: AppColors.mainColor,
         title: Text(
-          AppTranslations.translate("memberDetails",args:[]),
+          AppTranslations.translate("memberDetails",args: []),
           style: TextStyle(
               color: Colors.white, fontSize: 24, fontWeight: FontWeight.bold),
         ),
@@ -52,17 +52,14 @@ class MemberDetails extends GetWidget {
                 children: [
                   Hero(
                       tag: member.id,
-                      child: Container(
-                          alignment: Alignment.center,
-                          decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(25)),
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(25),
-                              child: Image.network(
-                                member.image,
-                                fit: BoxFit.cover,
-                                height: 300,
-                              )))),
+                      child: ClipRRect(
+                          borderRadius: BorderRadius.circular(25),
+                          child: Image.network(
+                            member.image,
+                            fit: BoxFit.cover,
+                            height: MediaQuery.of(context).size.height / 1,
+                            width: MediaQuery.of(context).size.width,
+                          ))),
                   Text(member.name,
                       style: TextStyle(
                           color: Colors.white,
